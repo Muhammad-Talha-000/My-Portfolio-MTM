@@ -30,18 +30,58 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <!-- <section class="about">
             <div style="height: 300px; width: 300px; background-color: aqua;"></div>
             <div>
                 <h1 data-aos="slide-up">About Me</h1>
                 <p data-aos="zoom-in">I am a student of Computer Engineering and a front-end web developer with a passion for creating beautiful, functional and responsive websites. Willing to become a DevOps Engineer</p>
             </div>
-            <div></div>
+        </section> -->
+        <section class="about">
+            <div class="container">
+                    <div class="row">
+                        <div class="about-col-1" data-aos="fade-right">
+                            <img src="images/my pic.jpg">
+                        </div>
+                        <div class="about-col-2" data-aos="fade-left">
+                            <h1>About me</h1>
+                            <p>I am a Computer Engineering student and web developer with expertise in MERN stacks. I excel in building dynamic, responsive web applications and am passionate about solving complex problems and learning new technologies. Willing  to become a DevOps Engineer</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul> 
+                                    <li><span>Front-end Development</span><br>Building Website Interfaces</li>
+                                    <li><span>C++ Advance</span><br>Logic Building and Problem Solving in C++</li>
+                                    <li><span>React.js</span><br>Mern Stack Development with React.js</li>
+                                    <li><span>Tailwind CSS</span><br>Expert on both CSS and Tailwind CSS</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul> 
+                                    <li><span>Computer Engineering (2022-Current)</span><br>Bachelor's in Computer Engineering form International Islamic University, Islamabad.</li>
+                                    <li><span>Front-end Developemnt</span><br>Completed a short Course of Web Development offered by Meta(Facebook).</li>
+                                    <li><span>FSc. Pre Engineering (2020-2022)</span><br>Completed  FSc. ICS from Global Boys College, Lalazar Rawalpindi with 75% Marks in Board Exams.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Stellar Stack</span><br>Worked as an interni in front-end web development (Jan-May 2024).</li>
+                                    <li><span>IIUI</span><br>Worked as an interni in machine learning (July-August 2023).</li>
+                                    <li><span>Richard Academy</span><br>Completed an English language paid course (Dec 2020 - Jan 2021).</li> 
+                                    <li><span>Web Development Porject</span><br>Worked for the website Front-end Projects at Different  Platforms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </section>
         <section class="project">
             <h1 data-aos="slide-up">Projects</h1>
             <div class="projects-card" data-aos="zoom-in">
-                <div class="card" >
+                <div id="card" >
                     <a href="https://fresh-builds.vercel.app/" target="_blank" style="text-decoration: none;">
                     <div class="first-content">
                         <p>FreshBuilds</p>
@@ -50,7 +90,7 @@
                         <span><img src="images/p1.png" alt="project1" style="width: 130px;"><br><p>FreshBuilds is the modern way to find and buy a new construction house.</p></span>
                     </div></a>
                 </div>
-                <div class="card">
+                <div id="card">
                     <a href="https://resume-eta-teal.vercel.app/" target="_blank" style="text-decoration: none;">
                     <div class="first-content">
                         <p>Resume</p>
@@ -59,7 +99,7 @@
                         <span><i class="fa-regular fa-file" style="color: #3E8180; font-size: larger;"></i><br><p>Creative Technologist. Simple and basic Resume</p></span>
                     </div></a>
                 </div>
-                <div class="card">
+                <div id="card">
                     <a href="https://hitmarker-jade.vercel.app/" target="_blank" style="text-decoration: none;">
                     <div class="first-content">
                         <p>Hitmarker</p>
@@ -68,7 +108,7 @@
                         <span><img src="images/hitmarker.png" alt="hitmarker" style="width: 130px;"><br><p>Hitmarker is the largest gaming and esports jobs platform in the world.</p></span>
                     </div></a>
                 </div>
-                <div class="card">
+                <div id="card">
                     <a href="https://digital-marketing-agency-peach.vercel.app/" target="_blank" style="text-decoration: none;">
                     <div class="first-content">
                         <p>Digital Marketing Agency</p>
@@ -77,7 +117,7 @@
                         <span><img src="images/DMA.svg" alt="DMA" style="width: 130px;"><br><p>Digital Marketing Agency, Free Advetisemrnt </p></span>
                     </div></a>
                 </div>
-                <div class="card">
+                <div id="card">
                     <a href="https://mike-koen-qy9o.vercel.app/" target="_blank" style="text-decoration: none;">
                     <div class="first-content">
                         <p>Mike Koen</p>
@@ -86,7 +126,7 @@
                         <span><img src="images/mike.png" alt="project1" style="width: 130px;"><br><p>Find your dream house, Buy Sell and Invest through Mike Keon</p></span>
                     </div></a>
                 </div>
-                <div class="card">
+                <div id="card">
                     <a href="https://growthware-delta.vercel.app/" target="_blank" style="text-decoration: none;">
                     <div class="first-content">
                         <p>Growthware</p>
@@ -95,7 +135,7 @@
                         <span><img src="images/Growthware Logo.png" alt="project1" style="width: 130px;"><br><p>A workplace of innovative thinkers for unlocking the secrets of business growth. </p></span>
                     </div></a>
                 </div>
-                <div class="card">
+                <div id="card">
                     <a href="https://nutra-funnel.vercel.app/" target="_blank" style="text-decoration: none;">
                     <div class="first-content">
                         <p>Nutra-Funnel</p>
@@ -106,16 +146,34 @@
                 </div>
             </div>
         </section>
+        <section class="expertise">
+
+        </section>
         <section class="contact">
             <div class="contact-left" data-aos="fade-right">
                 <h1>Contact Me</h1>
                 <p><i id="icon" class="fa-solid fa-paper-plane" aria-hidden="true"></i>talhahere000@gmail.com</p>
                 <p><i id="icon" class="fa-solid fa-square-phone" aria-hidden="true"></i>+92 333 5295244</p>
+                <div class="card">
+                    <div class="background"></div>
+                    <div class="logo">
+                        <img src="images/my logo.png" alt="">
+                      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.667 31.69" class="logo-svg">
+                        <path id="Path_6" data-name="Path 6" d="M12.827,1.628A1.561,1.561,0,0,1,14.31,0h2.964a1.561,1.561,0,0,1,1.483,1.628v11.9a9.252,9.252,0,0,1-2.432,6.852q-2.432,2.409-6.963,2.409T2.4,20.452Q0,18.094,0,13.669V1.628A1.561,1.561,0,0,1,1.483,0h2.98A1.561,1.561,0,0,1,5.947,1.628V13.191a5.635,5.635,0,0,0,.85,3.451,3.153,3.153,0,0,0,2.632,1.094,3.032,3.032,0,0,0,2.582-1.076,5.836,5.836,0,0,0,.816-3.486Z" transform="translate(0 0)"></path>
+                        <path id="Path_7" data-name="Path 7" d="M75.207,20.857a1.561,1.561,0,0,1-1.483,1.628h-2.98a1.561,1.561,0,0,1-1.483-1.628V1.628A1.561,1.561,0,0,1,70.743,0h2.98a1.561,1.561,0,0,1,1.483,1.628Z" transform="translate(-45.91 0)"></path>
+                        <path id="Path_8" data-name="Path 8" d="M0,80.018A1.561,1.561,0,0,1,1.483,78.39h26.7a1.561,1.561,0,0,1,1.483,1.628v2.006a1.561,1.561,0,0,1-1.483,1.628H1.483A1.561,1.561,0,0,1,0,82.025Z" transform="translate(0 -51.963)"></path>
+                      </svg> -->
+                    </div>
+                    <div class="box box1"><a href="https://www.instagram.com/malik_talha_000?igsh=eTB0Znk0eGNhMGFh" target="_blank"><span class="icon"><i class="fa-brands fa-instagram"></i></span></a></div>
+                    <div class="box box2"><a href="https://github.com/Muhammad-Talha-000" target="_blank"><span class="icon"><i class="fa-brands fa-github"></i></span></a></div>
+                    <div class="box box3"><a href="https://www.linkedin.com/in/muhammad-talha-393289294" target="_blank"><span class="icon"><i class="fa-brands fa-linkedin"></i></span></a></div>
+                    <div class="box box4"></div>
+                </div>
             </div>
             <form action="https://formsubmit.co/talhahere000@gmail.com" method="POST" id="contact-form" data-aos="fade-left">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="yourname@email.com" required>
-                <textarea name="message" placeholder="Write your message here" required></textarea>
+                <textarea name="message" placeholder="Write your message here" required></textarea><br>
                 <input type="hidden" name="_captcha" value="false">
                 <button class="button">Send Message</button>
             </form>
@@ -123,8 +181,7 @@
     </main>
     <script src="https://kit.fontawesome.com/c8944ef366.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init({
-        duration: 1300,
-    });</script>
+    <script>AOS.init({duration: 1300,});</script>
+    <script src="script.js"></script>
 </body>
 </html>
