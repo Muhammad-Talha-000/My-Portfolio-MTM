@@ -260,8 +260,9 @@ textarea {
 }
 .card {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    margin-top: 35px;
     background: #5b98b0;
     border-radius: 30px;
     overflow: hidden;
@@ -283,7 +284,7 @@ textarea {
   }
   .logo img {
       fill: white;
-      width: 90px;
+      width: 60px;
   }
   .icon {
       display: inline-block;
