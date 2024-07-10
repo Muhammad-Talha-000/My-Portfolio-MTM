@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -12,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <img src="images/logo.jpg" alt="logo">
+            <img src="images/my logo.png" alt="logo">
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,20 +23,108 @@
             </ul>
         </nav>
         <div class="bg-image"></div>
-        <div class="name">
+        <div class="name" data-aos="fade-right">
             <p>Front-end Web Developer</p>
-            <h1>Hi, I'm <span>MUHAMMAD TALHA</span></h1>
-            <button class="button">Resume</button>
+            <h1>Hey there,<br>I'm <span>MUHAMMAD TALHA</span></h1>
+            <a href="images/M Talha.pdf" target="_blank"><button class="button" data-aos="zoom-in">RESUME</button></a>
         </div>
     </header>
     <main>
         <section class="about">
             <div style="height: 300px; width: 300px; background-color: aqua;"></div>
             <div>
-                <h1>About Me</h1>
-                <p>I am a student of Computer Engineering and a front-end web developer with a passion for creating beautiful, functional and responsive websites. Willing to become a DevOps Engineer</p>
+                <h1 data-aos="slide-up">About Me</h1>
+                <p data-aos="zoom-in">I am a student of Computer Engineering and a front-end web developer with a passion for creating beautiful, functional and responsive websites. Willing to become a DevOps Engineer</p>
+            </div>
+            <div></div>
+        </section>
+        <section class="project">
+            <h1 data-aos="slide-up">Projects</h1>
+            <div class="projects-card" data-aos="zoom-in">
+                <div class="card" >
+                    <a href="https://fresh-builds.vercel.app/" target="_blank" style="text-decoration: none;">
+                    <div class="first-content">
+                        <p>FreshBuilds</p>
+                    </div>
+                    <div class="second-content">
+                        <span><img src="images/p1.png" alt="project1" style="width: 130px;"><br><p>FreshBuilds is the modern way to find and buy a new construction house.</p></span>
+                    </div></a>
+                </div>
+                <div class="card">
+                    <a href="https://resume-eta-teal.vercel.app/" target="_blank" style="text-decoration: none;">
+                    <div class="first-content">
+                        <p>Resume</p>
+                    </div>
+                    <div class="second-content">
+                        <span><i class="fa-regular fa-file" style="color: #3E8180; font-size: larger;"></i><br><p>Creative Technologist. Simple and basic Resume</p></span>
+                    </div></a>
+                </div>
+                <div class="card">
+                    <a href="https://hitmarker-jade.vercel.app/" target="_blank" style="text-decoration: none;">
+                    <div class="first-content">
+                        <p>Hitmarker</p>
+                    </div>
+                    <div class="second-content">
+                        <span><img src="images/hitmarker.png" alt="hitmarker" style="width: 130px;"><br><p>Hitmarker is the largest gaming and esports jobs platform in the world.</p></span>
+                    </div></a>
+                </div>
+                <div class="card">
+                    <a href="https://digital-marketing-agency-peach.vercel.app/" target="_blank" style="text-decoration: none;">
+                    <div class="first-content">
+                        <p>Digital Marketing Agency</p>
+                    </div>
+                    <div class="second-content">
+                        <span><img src="images/DMA.svg" alt="DMA" style="width: 130px;"><br><p>Digital Marketing Agency, Free Advetisemrnt </p></span>
+                    </div></a>
+                </div>
+                <div class="card">
+                    <a href="https://mike-koen-qy9o.vercel.app/" target="_blank" style="text-decoration: none;">
+                    <div class="first-content">
+                        <p>Mike Koen</p>
+                    </div>
+                    <div class="second-content">
+                        <span><img src="images/mike.png" alt="project1" style="width: 130px;"><br><p>Find your dream house, Buy Sell and Invest through Mike Keon</p></span>
+                    </div></a>
+                </div>
+                <div class="card">
+                    <a href="https://growthware-delta.vercel.app/" target="_blank" style="text-decoration: none;">
+                    <div class="first-content">
+                        <p>Growthware</p>
+                    </div>
+                    <div class="second-content">
+                        <span><img src="images/Growthware Logo.png" alt="project1" style="width: 130px;"><br><p>A workplace of innovative thinkers for unlocking the secrets of business growth. </p></span>
+                    </div></a>
+                </div>
+                <div class="card">
+                    <a href="https://nutra-funnel.vercel.app/" target="_blank" style="text-decoration: none;">
+                    <div class="first-content">
+                        <p>Nutra-Funnel</p>
+                    </div>
+                    <div class="second-content">
+                        <span><img src="images/nutra-logo.png" alt="nutra" style="width: 130px;"><br><p>6-Day Health-Supplement Drop-Shipping Business Accelerator</p></span>
+                    </div></a>
+                </div>
             </div>
         </section>
+        <section class="contact">
+            <div class="contact-left" data-aos="fade-right">
+                <h1>Contact Me</h1>
+                <p><i id="icon" class="fa-solid fa-paper-plane" aria-hidden="true"></i>talhahere000@gmail.com</p>
+                <p><i id="icon" class="fa-solid fa-square-phone" aria-hidden="true"></i>+92 333 5295244</p>
+            </div>
+            <form action="https://formsubmit.co/talhahere000@gmail.com" method="POST" id="contact-form" data-aos="fade-left">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="yourname@email.com" required>
+                <textarea name="message" placeholder="Write your message here" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <button class="button">Send Message</button>
+            </form>
+        </section>
     </main>
+    <script src="https://kit.fontawesome.com/c8944ef366.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({
+        duration: 1300,
+    });</script>
 </body>
 </html>
