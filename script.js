@@ -10,3 +10,8 @@ var tablinks = document.getElementsByClassName("tab-links");
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+
+var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })

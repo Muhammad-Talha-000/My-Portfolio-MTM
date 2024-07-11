@@ -9,6 +9,17 @@ body{
     background-color: #32474c;
     font-family: "Poppins";
 }
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black url(images/preloader.gif) no-repeat center center;
+  z-index: 9999;
+  background-size: 12%;
+}
+
 header{
     position: relative;
 }
@@ -30,6 +41,7 @@ nav{
 }
 nav img{
     width: 80px;
+    cursor: pointer;
 }
 .nav_links{
     display: flex;
@@ -114,35 +126,24 @@ nav img{
 .button:active {
     filter: brightness(.8);
 }
-/* .about{
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-} */
 .about h1, .contact h1{
     color: #75c1df;
     margin: 0;
     font-size: 45px;
 }
-/* .about p{
-    margin: 0;
-    width: 535px;
-} */
 .project{
     display: grid;
     justify-content: center;
     align-items: center;
 }
-.project h1{
+.project h1, .services h1{
     text-align: center;
     color: #75c1df;
     margin: 0 0 20px 0;
     font-size: 45px;
 }
 .projects-card{
-    padding: 0 150px;
+    padding: 0 150px 30px 150px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -411,42 +412,6 @@ textarea {
     transition-delay: 0.6s;
     width: 50px;
   }
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-/* animation: appears linear;
-    animation-timeline: view();
-    animation-range: entry 0%;
-@keyframes appears{
-    from{
-        opacity: 0;
-        clip-path: inset(100% 100% 0 0);
-    }
-    to{
-        opacity: 1;
-        clip-path: inset(0 0 0 0);
-    }
-} */
-
-
-
-
-
-
-
-
-
 .about{
   padding: 60px 0 30px 0;
   color: #ababab;
@@ -527,3 +492,5 @@ textarea {
 .tab-contents.active-tab{
   display: block;
 }
+
+
